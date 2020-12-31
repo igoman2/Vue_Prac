@@ -1,0 +1,25 @@
+<html>
+
+<head>
+
+    <script src="./script.js"></script>
+    <script>
+        // //body태그에 있는 버튼 정보를 읽기도 전에 head태그에서 읽으려 하면 null exception.
+        // //window.onload를 통해 웹페이지가 다 로드된 후 함수가 호출되도록 하여 hw객체의 null exception 방지. 
+        
+        // //만약 이 코드가 head가 아니라 body 안에 들어간다면 window.onload 쓸 필요 없음. WHY? 버튼은 body안에 있기 때문에.
+        // window.onload = function () {
+        //     var hw = document.getElementById('hw');
+        //     hw.addEventListener('click', function () {
+        //         alert('Hello World');
+        //     })
+        // }
+
+        //가급적이면 body태그 끝부분에 script사용할 것.
+    </script>
+</head>
+<body>
+    <input type="button" id="hw" value="Hello World" />
+</body>
+
+</html>
